@@ -5,7 +5,7 @@ setup(
     name='inplace_abn',
     ext_modules=[
         CUDAExtension(
-            'inplace_abn', [
+            'inplace_abn_cuda', [
                 'inplace_abn/modules/src/inplace_abn.cpp',
                 'inplace_abn/modules/src/inplace_abn_cpu.cpp',
                 'inplace_abn/modules/src/inplace_abn_cuda.cu',
