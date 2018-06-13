@@ -15,5 +15,5 @@ setup(
                 'nvcc': ['--expt-extended-lambda']
             })
     ],
-    packages=['inplace_abn'],
+    packages=['inplace_abn', 'inplace_abn.imagenet', 'inplace_abn.models', 'inplace-abn.modules'],
     cmdclass={'build_ext': BuildExtension})
