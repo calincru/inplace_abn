@@ -5,7 +5,7 @@ import torch.optim as optim
 import torch.optim.lr_scheduler as lr_scheduler
 import torchvision.transforms as transforms
 
-from modules import ABN, InPlaceABNWrapper, InPlaceABNSyncWrapper
+from ..modules import ABN, InPlaceABNWrapper, InPlaceABNSyncWrapper
 from .transforms import ColorJitter, Lighting
 
 

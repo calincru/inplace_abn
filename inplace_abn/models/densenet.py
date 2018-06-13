@@ -4,7 +4,7 @@ from functools import partial
 
 import torch.nn as nn
 
-from modules import ABN, GlobalAvgPool2d, DenseModule
+from ..modules import ABN, GlobalAvgPool2d, DenseModule
 from ._util import try_index
 
 

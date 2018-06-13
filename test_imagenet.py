@@ -12,7 +12,7 @@ import torch.utils.data.distributed
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 
-import models
+import inplace_abn.models
 from imagenet import config as config, utils as utils
 
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Testing.')

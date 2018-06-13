@@ -4,13 +4,16 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 setup(
     name='inplace_abn',
     ext_modules=[
-        CUDAExtension('inplace_abn', [
-            'modules/src/inplace_abn.cpp',
-            'modules/src/inplace_abn_cpu.cpp',
-            'modules/src/inplace_abn_cuda.cu',
-        ], extra_compile_args={'cxx': [],
-                               'nvcc': ['--expt-extended-lambda']})
+        CUDAExtension(
+            'inplace_abn', [
+                'inplace_abn/modules/src/inplace_abn.cpp',
+                'inplace_abn/modules/src/inplace_abn_cpu.cpp',
+                'inplace_abn/modules/src/inplace_abn_cuda.cu',
+            ],
+            extra_compile_args={
+                'cxx': [],
+                'nvcc': ['--expt-extended-lambda']
+            })
     ],
-    cmdclass={
-        'build_ext': BuildExtension
-    })
+    packages=['inplace_abn'],
+    cmdclass={'build_ext': BuildExtension})

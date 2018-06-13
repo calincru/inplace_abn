@@ -15,7 +15,7 @@ import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 from tensorboardX import SummaryWriter
 
-import models
+import inplace_abn.models
 from imagenet import config as config, utils as utils
 from modules import InPlaceABN, InPlaceABNSync
 

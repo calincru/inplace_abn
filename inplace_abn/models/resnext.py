@@ -4,7 +4,7 @@ from functools import partial
 
 import torch.nn as nn
 
-from modules import IdentityResidualBlock, ABN, GlobalAvgPool2d
+from ..modules import IdentityResidualBlock, ABN, GlobalAvgPool2d
 from ._util import try_index
 
 
