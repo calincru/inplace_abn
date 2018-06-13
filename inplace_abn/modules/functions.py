@@ -1,4 +1,4 @@
-import inplace_abn as backend
+import inplace_abn_cuda as backend
 import torch.autograd as autograd
 import torch.cuda.comm as comm
 from torch.autograd.function import once_differentiable
